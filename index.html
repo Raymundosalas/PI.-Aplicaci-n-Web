@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Películas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Catálogo de Películas</h1>
+
+    <div class="login">
+        <input type="email" id="email" placeholder="Correo">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Iniciar Sesión</button>
+    </div>
+
+    <hr>
+
+    <div class="formulario">
+        <input type="text" id="titulo" placeholder="Título">
+        <input type="text" id="genero" placeholder="Género">
+        <input type="number" id="anio" placeholder="Año">
+        <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+        <button onclick="agregarPelicula()">
+            Agregar Película
+        </button>
+    </div>
+
+    <h2>Películas</h2>
+
+    <ul id="listaPeliculas"></ul>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
